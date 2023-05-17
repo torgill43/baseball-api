@@ -5,15 +5,13 @@ const app = express();
 // const swaggerUi = require('swagger-ui-express');
 // const swaggerDocument = require('./swagger.json');
 
-// app
-//     .use('/', )
+app.use("/", require("./routes"));
 
 mongodb.initDb((err) => {
   if (err) {
     console.log(err);
   } else {
     app.listen(port);
+    console.log(`Connected to DB and listening on port ${port}`);
   }
 });
-
-// Need to add a mongodb npm thingy?
