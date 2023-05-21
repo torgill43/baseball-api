@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Aaron Judge",
+    "age": "31",
+    "hometown": "Linden, CA",
+    "team": "New York Yankees",
+    "handedness": "R/R",
+    "hrs": "232",
+    "average": ".283"
+  },
+  {
+    "name": "Bryce Harper",
+    "age": "30",
+    "hometown": "Las Vegas, NV",
+    "team": "Philadelphia Phillies",
+    "handedness": "L/R",
+    "hrs": "287",
+    "average": ".280"
+  },
+  {
+    "name": "MIke Trout",
+    "age": "31",
+    "hometown": "Vineland, NJ",
+    "team": "Los Angeles Angels",
+    "handedness": "R/R",
+    "hrs": "360",
+    "average": ".302"
+  }
+]
