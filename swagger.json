@@ -5,10 +5,11 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "baseball-api.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "http",
+    "https"
   ],
   "paths": {
     "/": {
@@ -79,6 +80,9 @@
                   "example": "any"
                 },
                 "hrs": {
+                  "example": "any"
+                },
+                "average": {
                   "example": "any"
                 }
               }
@@ -155,6 +159,9 @@
                   "example": "any"
                 },
                 "hrs": {
+                  "example": "any"
+                },
+                "average": {
                   "example": "any"
                 }
               }

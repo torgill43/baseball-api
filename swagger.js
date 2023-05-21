@@ -5,8 +5,8 @@ const doc = {
     title: "My Baseball API",
     description: "Description",
   },
-  host: "localhost:8080",
-  schemes: ["http"],
+  host: "baseball-api.onrender.com",
+  schemes: ["http", "https"],
 };
 
 const outputFile = "./swagger.json";

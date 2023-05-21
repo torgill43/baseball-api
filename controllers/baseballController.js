@@ -48,7 +48,7 @@ const createPlayer = async (req, res, next) => {
       team: req.body.team,
       handedness: req.body.handedness,
       hrs: req.body.hrs,
-      average: req.body.hrs,
+      average: req.body.average,
     };
     const result = await mongodb
       .getDb()
@@ -74,7 +74,7 @@ const updatePlayer = async (req, res, next) => {
       team: req.body.team,
       handedness: req.body.handedness,
       hrs: req.body.hrs,
-      average: req.body.hrs,
+      average: req.body.average,
     };
     const result = await mongodb
       .getDb()
