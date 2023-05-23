@@ -5,8 +5,8 @@ GET http://localhost:8080
 ### Get all players
 GET http://localhost:8080/baseball
 
-### Get contact by ID
-GET http://localhost:8080/baseball/64696736b9fdcf534103f646
+### Get player by ID
+GET http://localhost:8080/baseball/6469714e8e044111a9cb2eea
 
 ### Create new player
 POST http://localhost:8080/baseball HTTP/1.1
@@ -23,13 +23,13 @@ Content-Type: application/json
 }
 
 ### Update player by ID
-PUT http://localhost:8080/baseball/64696736b9fdcf534103f646 HTTP/1.1
+PUT http://localhost:8080/baseball/6469714e8e044111a9cb2eea HTTP/1.1
 Content-Type: application/json
 
 {
     "name": "Billy Bob",
     "age": "55",
-    "hometown": "Paris, ID",
+    "hometown": "Paris, TX",
     "team": "Idaho Falls Chukars",
     "handedness": "L/R",
     "hrs": "287",
@@ -80,4 +80,4 @@ Content-Type: application/json
 }
 
 ### Delete player by ID
-DELETE https://baseball-api.onrender.com/baseball/645d33983c17354c046a41b9
+DELETE https://baseball-api.onrender.com/baseball/6469714e8e044111a9cb2eea
