@@ -3,8 +3,8 @@ const bodyParser = require("body-parser");
 const mongodb = require("./db/mongodb");
 const port = process.env.Port || 8080;
 const app = express();
-const swaggerUi = require("swagger-ui-express");
-const swaggerDocument = require("./swagger.json");
+// const swaggerUi = require("swagger-ui-express");
+// const swaggerDocument = require("./swagger.json");
 
 app
   .use(bodyParser.json())

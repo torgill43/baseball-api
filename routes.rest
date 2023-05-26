@@ -6,7 +6,7 @@ GET http://localhost:8080
 GET http://localhost:8080/baseball
 
 ### Get player by ID
-GET http://localhost:8080/baseball/6469714e8e044111a9cb2eea
+GET http://localhost:8080/baseball/6470d9ab0088d326752aeb15
 
 ### Create new player
 POST http://localhost:8080/baseball HTTP/1.1
@@ -14,30 +14,30 @@ Content-Type: application/json
 
 {
     "name": "Billy Bob",
-    "age": "55",
+    "age": 25,
     "hometown": "Paris, ID",
-    "team": "Idaho Falls Chukars",
-    "handedness": "L/R",
-    "hrs": "287",
-    "average": ".280"
+    "team": "New York Mets",
+    "handedness": "S/R",
+    "hrs": 55,
+    "average": 0.280
 }
 
 ### Update player by ID
-PUT http://localhost:8080/baseball/6469714e8e044111a9cb2eea HTTP/1.1
+PUT http://localhost:8080/baseball/6470d9ab0088d326752aeb15 HTTP/1.1
 Content-Type: application/json
 
 {
     "name": "Billy Bob",
-    "age": "55",
+    "age": 26,
     "hometown": "Paris, TX",
-    "team": "Idaho Falls Chukars",
-    "handedness": "L/R",
-    "hrs": "287",
-    "average": ".280"
+    "team": "Milwaukee Brewers",
+    "handedness": "S/R",
+    "hrs": 72,
+    "average": 0.290
 }
 
 ### Delete player by ID
-DELETE http://localhost:8080/baseball/64696736b9fdcf534103f646
+DELETE http://localhost:8080/baseball/646fe907bccf98437f5502df
 
 # --------------------------------------------------------------------------------
 
@@ -49,7 +49,7 @@ GET https://baseball-api.onrender.com/
 GET https://baseball-api.onrender.com/baseball
 
 ### Get single player by ID
-GET https://baseball-api.onrender.com/baseball/6457158e0a338e56a0403db7
+GET https://baseball-api.onrender.com/baseball/64680fc2d53ba485814e906c
 
 ### Create new player
 POST https://baseball-api.onrender.com/baseball HTTP/1.1
@@ -57,7 +57,7 @@ Content-Type: application/json
 
 {
     "name": "Billy Bob",
-    "age": "55",
+    "age": 55,
     "hometown": "Paris, ID",
     "team": "Idaho Falls Chukars",
     "handedness": "L/R",
@@ -71,7 +71,7 @@ Content-Type: application/json
 
 {
     "name": "Billy Bob",
-    "age": "55",
+    "age": 55,
     "hometown": "Paris, TX",
     "team": "Idaho Falls Chukars",
     "handedness": "L/R",
@@ -80,4 +80,4 @@ Content-Type: application/json
 }
 
 ### Delete player by ID
-DELETE https://baseball-api.onrender.com/baseball/6469714e8e044111a9cb2eea
+DELETE https://baseball-api.onrender.com/baseball/646fa514af3646ace4891b98

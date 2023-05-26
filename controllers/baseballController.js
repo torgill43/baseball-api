@@ -83,7 +83,7 @@ const updatePlayer = async (req, res, next) => {
       .updateOne({ _id: userId }, { $set: player });
     console.log(result);
     if (result.modifiedCount > 0) {
-      res.status(204).send();
+      res.status(204).send({ message: "Update successful." });
     } else {
       res
         .status(500)
@@ -98,6 +98,10 @@ const updatePlayer = async (req, res, next) => {
 
 const deletePlayer = async (req, res, next) => {
   // #swagger.tags= ['Players']
+  if (!req.params.id) {
+    res.status(400).send({ message: "id can not be missing!" });
+    return;
+  }
   try {
     const userId = new ObjectId(req.params.id);
     const result = await mongodb
