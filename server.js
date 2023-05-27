@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongodb = require("./db/mongodb");
+const createError = require("http-errors");
 const port = process.env.Port || 8080;
 const app = express();
 // const swaggerUi = require("swagger-ui-express");
@@ -22,6 +23,25 @@ app
     next();
   })
   .use("/", require("./routes"));
+
+// 404 handler...
+app.use((req, res, next) => {
+  // const err = new Error('not found');
+  // err.status = 404;
+  // next(err);
+  next(createError(404, "Not found"));
+});
+
+// error handler
+app.use((err, req, res, next) => {
+  res.status(err.status || 500);
+  res.send({
+    error: {
+      status: err.status || 500,
+      message: err.message,
+    },
+  });
+});
 
 mongodb.initDb((err) => {
   if (err) {
