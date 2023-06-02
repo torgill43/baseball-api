@@ -4,6 +4,7 @@ const mongodb = require("./db/mongodb");
 const createError = require("http-errors");
 const port = process.env.Port || 8080;
 const app = express();
+
 // const swaggerUi = require("swagger-ui-express");
 // const swaggerDocument = require("./swagger.json");
 
@@ -51,3 +52,7 @@ mongodb.initDb((err) => {
     console.log(`Connected to DB and listening on port ${port}`);
   }
 });
+
+var randomstring = require("randomstring");
+
+randomstring.generate();
