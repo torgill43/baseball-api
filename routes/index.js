@@ -27,8 +27,10 @@ router.get("/profile", requiresAuth(), (req, res) => {
 // Route for Swagger UI
 router.use("/", requiresAuth(), require("./swagger"));
 
-// Contacts Route
-router.use("/baseball", requiresAuth(), require("./baseballRoute"));
+// Player Route
+router.use("/baseball-player", requiresAuth(), require("./playerRoute"));
+// Team Route
+router.use("/baseball-team", requiresAuth(), require("./teamRoute"));
 
 router.get("/", (req, res) => {
   res.send("Sydney Kate Orgill");

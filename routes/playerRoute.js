@@ -1,19 +1,19 @@
 const router = require("express").Router();
-const baseballController = require("../controllers/baseballController");
-const validate = require("../validator.js");
+const playerController = require("../controllers/playerController");
+const validate = require("../validate/playerValidator.js");
 
 // Route to retrieve all players
-router.get("/", baseballController.getAllPlayers);
+router.get("/", playerController.getAllPlayers);
 
 // Route to get single player based on ID
-router.get("/:id", baseballController.getOnePlayer);
+router.get("/:id", playerController.getOnePlayer);
 
 // Route to create a player
 router.post(
   "/",
   validate.createPlayerValidationRules(),
   validate.validateCreate,
-  baseballController.createPlayer
+  playerController.createPlayer
 );
 
 // Route to update a player based on ID
@@ -21,10 +21,10 @@ router.put(
   "/:id",
   validate.updatePlayerValidationRules(),
   validate.validateUpdate,
-  baseballController.updatePlayer
+  playerController.updatePlayer
 );
 
 // Route to delete a player based on ID
-router.delete("/:id", baseballController.deletePlayer);
+router.delete("/:id", playerController.deletePlayer);
 
 module.exports = router;
