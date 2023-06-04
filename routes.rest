@@ -6,13 +6,13 @@ GET http://localhost:8080/abc_xyz
 GET http://localhost:8080
 
 ### Get all players
-GET http://localhost:8080/baseball
+GET http://localhost:8080/baseball-player
 
 ### Get player by ID
-GET http://localhost:8080/baseball/6470d9ab0088d326752aeb15
+GET http://localhost:8080/baseball-player/6470d9ab0088d326752aeb15
 
 ### Create new player
-POST http://localhost:8080/baseball HTTP/1.1
+POST http://localhost:8080/baseball-player HTTP/1.1
 Content-Type: application/json
 
 {
@@ -26,7 +26,7 @@ Content-Type: application/json
 }
 
 ### Update player by ID
-PUT http://localhost:8080/baseball/6470d9ab0088d326752aeb15 HTTP/1.1
+PUT http://localhost:8080/baseball-player/6470d9ab0088d326752aeb15 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -40,7 +40,7 @@ Content-Type: application/json
 }
 
 ### Delete player by ID
-DELETE http://localhost:8080/baseball/64716bebc6d24865beecc112
+DELETE http://localhost:8080/baseball-player/64716bebc6d24865beecc112
 
 # --------------------------------------------------------------------------------
 
@@ -49,38 +49,38 @@ DELETE http://localhost:8080/baseball/64716bebc6d24865beecc112
 GET https://baseball-api.onrender.com/
 
 ### Get all players
-GET https://baseball-api.onrender.com/baseball
+GET https://baseball-api.onrender.com/baseball-player
 
 ### Get single player by ID
-GET https://baseball-api.onrender.com/baseball/64680fc2d53ba485814e906c
+GET https://baseball-api.onrender.com/baseball-player/64728dc39bb04d8f1dfd177f
 
 ### Create new player
-POST https://baseball-api.onrender.com/baseball HTTP/1.1
+POST https://baseball-api.onrender.com/baseball-player HTTP/1.1
 Content-Type: application/json
 
 {
     "name": "Billy Bob",
     "age": 55,
     "hometown": "Paris, ID",
-    "team": "Idaho Falls Chukars",
+    "team": "Colorado Rockies",
     "handedness": "L/R",
     "hrs": "287",
     "average": ".280"
 }
 
 ### Update player by ID
-PUT https://baseball-api.onrender.com/baseball/645cf9b87c691d903facc416 HTTP/1.1
+PUT https://baseball-api.onrender.com/baseball-player/64728dc39bb04d8f1dfd177f HTTP/1.1
 Content-Type: application/json
 
 {
     "name": "Billy Bob",
     "age": 55,
     "hometown": "Paris, TX",
-    "team": "Idaho Falls Chukars",
+    "team": "Colorado Rockies",
     "handedness": "L/R",
-    "hrs": "287",
-    "average": ".280"
+    "hrs": 287,
+    "average": 0.280
 }
 
 ### Delete player by ID
-DELETE https://baseball-api.onrender.com/baseball/646fa514af3646ace4891b98
+DELETE https://baseball-api.onrender.com/baseball-player/647293e19bb04d8f1dfd1782
