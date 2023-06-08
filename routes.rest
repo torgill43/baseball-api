@@ -1,4 +1,7 @@
 //LOCALHOST
+#############################################################################################
+# LOCALHOST
+#############################################################################################
 
 // ***************************************************************************************
 // PLAYER ROUTES
@@ -82,7 +85,7 @@ Content-Type: application/json
 DELETE http://localhost:8080/baseball-team/64811a71344f773c90151107
 
 #############################################################################################
-// PRODUCTION DISPLAY (render.com)
+# PRODUCTION DISPLAY (render.com)
 #############################################################################################
 
 // ***************************************************************************************
@@ -136,7 +139,7 @@ DELETE https://baseball-api.onrender.com/baseball-player/647293e19bb04d8f1dfd178
 GET https://baseball-api.onrender.com/baseball-team
 
 ### Get team by ID
-GET https://baseball-api.onrender.com/baseball-team/647e8c86b1e1c62a33214cf2
+GET https://baseball-api.onrender.com/baseball-team/64811d2efbc3093fc0557631
 
 ### Create new team
 POST https://baseball-api.onrender.com/baseball-team HTTP/1.1
@@ -150,15 +153,15 @@ Content-Type: application/json
 }
 
 ### Update team by ID
-PUT https://baseball-api.onrender.com/baseball-team/647e8c86b1e1c62a33214cf2 HTTP/1.1
+PUT https://baseball-api.onrender.com/baseball-team/64811d2efbc3093fc0557631 HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "Philadelphia Phillies",
-    "location": "Philadelphia, PA",
-    "stadium": "Citizens Bank Park",
+    "name": "Miami Marlins",
+    "location": "Miami, FL",
+    "stadium": "LoanDepot Park",
     "world_series_wins": 2
 }
 
 ### Delete team by ID
-DELETE https://baseball-api.onrender.com/baseball-team/64811a71344f773c90151107
+DELETE https://baseball-api.onrender.com/baseball-team/64811d2efbc3093fc0557631

@@ -1,8 +1,9 @@
 const router = require("express").Router();
-const { auth } = require("express-openid-connect");
 const dotenv = require("dotenv");
-const { requiresAuth } = require("express-openid-connect");
 dotenv.config;
+
+const { auth } = require("express-openid-connect");
+const { requiresAuth } = require("express-openid-connect");
 
 const config = {
   authRequired: false,
@@ -25,7 +26,7 @@ router.get("/profile", requiresAuth(), (req, res) => {
 });
 
 // Route for Swagger UI
-router.use("/", requiresAuth(), require("./swagger"));
+router.use("/", require("./swagger"));
 // router.use("/", require("./swagger"));
 
 // Player Route
@@ -34,7 +35,7 @@ router.use("/baseball-player", requiresAuth(), require("./playerRoute"));
 router.use("/baseball-team", requiresAuth(), require("./teamRoute"));
 
 router.get("/", (req, res) => {
-  res.send("Sydney Kate Orgill");
+  res.send("Baseball API");
 });
 
 module.exports = router;
