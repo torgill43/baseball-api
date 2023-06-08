@@ -1,5 +1,9 @@
 //LOCALHOST
 
+// ***************************************************************************************
+// PLAYER ROUTES
+// ***************************************************************************************
+
 ### Error route
 GET http://localhost:8080/abc_xyz
 ### Base Route
@@ -42,9 +46,48 @@ Content-Type: application/json
 ### Delete player by ID
 DELETE http://localhost:8080/baseball-player/64716bebc6d24865beecc112
 
-# --------------------------------------------------------------------------------
+// ***************************************************************************************
+// TEAM ROUTES
+// ***************************************************************************************
 
+### Get all teams
+GET http://localhost:8080/baseball-team
+
+### Get team by ID
+GET http://localhost:8080/baseball-team/647e8c86b1e1c62a33214cf2
+
+### Create new team
+POST http://localhost:8080/baseball-team HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Miami Marlins",
+    "location": "Miami, FL",
+    "stadium": "LoanDepot Park",
+    "world_series_wins": 2
+}
+
+### Update team by ID
+PUT http://localhost:8080/baseball-team/647e8c86b1e1c62a33214cf2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Philadelphia Phillies",
+    "location": "Philadelphia, PA",
+    "stadium": "Citizens Bank Park",
+    "world_series_wins": 2
+}
+
+### Delete team by ID
+DELETE http://localhost:8080/baseball-team/64811a71344f773c90151107
+
+#############################################################################################
 // PRODUCTION DISPLAY (render.com)
+#############################################################################################
+
+// ***************************************************************************************
+// PLAYER ROUTES
+// ***************************************************************************************
 ### Base Route
 GET https://baseball-api.onrender.com/
 
@@ -84,3 +127,38 @@ Content-Type: application/json
 
 ### Delete player by ID
 DELETE https://baseball-api.onrender.com/baseball-player/647293e19bb04d8f1dfd1782
+
+// ***************************************************************************************
+// TEAM ROUTES
+// ***************************************************************************************
+
+### Get all teams
+GET https://baseball-api.onrender.com/baseball-team
+
+### Get team by ID
+GET https://baseball-api.onrender.com/baseball-team/647e8c86b1e1c62a33214cf2
+
+### Create new team
+POST https://baseball-api.onrender.com/baseball-team HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Miami Marlins",
+    "location": "Miami, FL",
+    "stadium": "LoanDepot Park",
+    "world_series_wins": 2
+}
+
+### Update team by ID
+PUT https://baseball-api.onrender.com/baseball-team/647e8c86b1e1c62a33214cf2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Philadelphia Phillies",
+    "location": "Philadelphia, PA",
+    "stadium": "Citizens Bank Park",
+    "world_series_wins": 2
+}
+
+### Delete team by ID
+DELETE https://baseball-api.onrender.com/baseball-team/64811a71344f773c90151107

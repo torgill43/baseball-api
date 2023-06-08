@@ -1,26 +1,26 @@
 [
   {
     "name": "Philadelphia Phillies",
-    "location": "",
-    "stadium": "",
-    "world_series_wins": ""
+    "location": "Philadelphia, PA",
+    "stadium": "Citizens Bank Park",
+    "world_series_wins": 2
   },
   {
     "name": "Boston Red Sox",
-    "location": "",
-    "stadium": "",
-    "world_series_wins": ""
+    "location": "Boston, MA",
+    "stadium": "Fenway Park",
+    "world_series_wins": 9
   },
   {
     "name": "Arizona Diamondbacks",
-    "location": "",
-    "stadium": "",
-    "world_series_wins": ""
+    "location": "Phoenix, AZ",
+    "stadium": "Chase Field",
+    "world_series_wins": 1
   },
   {
     "name": "Tampa Bay Rays",
-    "location": "",
-    "stadium": "",
-    "world_series_wins": ""
+    "location": "St. Petersburg, FL",
+    "stadium": "Tropicana Field",
+    "world_series_wins": 0
   }
 ]

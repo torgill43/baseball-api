@@ -27,9 +27,6 @@ app
 
 // 404 handler...
 app.use((req, res, next) => {
-  // const err = new Error('not found');
-  // err.status = 404;
-  // next(err);
   next(createError(404, "Not found"));
 });
 
